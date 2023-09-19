@@ -403,7 +403,7 @@ class AdvancedSearchService
                     $needleFormatted = $this->prepareNeedleForRegexpCaseInsensitive($needle);
                     $search = str_replace('_', '\\_', $needleFormatted);
                     $currentSearches[] = "body REGEXP '$search'";
-    
+
                     // add regexp standard search for entries
                     $search = $this->convertToRawJSONStringForREGEXP($needleFormatted);
                     $search = str_replace('_', '\\_', $search);
